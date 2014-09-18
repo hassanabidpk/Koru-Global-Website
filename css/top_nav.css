@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+     #koruhome-nav {
+    background:url("../eng/images/spriteimage_english_why.png") no-repeat;
+    width: 980px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+#koruhome-nav li, #koruhome-nav a {
+	height: 40px;
+	display: block;
+}
+
+#koruhome-nav li {
+    float: left;
+    list-style: none;
+    display: inline;
+    text-indent: -9999em;
+}
+
+#koruhome-nav-01 { width: 186px; }
+#koruhome-nav-02 { width: 157px; }
+#koruhome-nav-03 { width: 150px; }
+#koruhome-nav-04 { width: 162px; }
+#koruhome-nav-05{ width: 161px; }
+#koruhome-nav-06 { width: 164px; }
+
+#koruhome-nav-01 a:hover { background:url("../eng/images/spriteimage_english_why.png") 0px -40px no-repeat; }
+#koruhome-nav-02 a:hover { background:url("../eng/images/spriteimage_english_why.png") -186px -40px no-repeat; }
+#koruhome-nav-03 a:hover { background:url("../eng/images/spriteimage_english_why.png") -343px -40px no-repeat; }
+#koruhome-nav-04 a:hover { background:url("../eng/images/spriteimage_english_why.png") -493px -40px no-repeat; }
+
+#koruhome-nav-05 a:hover { background:url("../eng/images/spriteimage_english_why.png") -655px -40px no-repeat; }
+#koruhome-nav-06 a:hover { background:url("../eng/images/spriteimage_english_why.png") -816px -40px no-repeat; }
+
+
+
+/*  sub navigation   */
+
+
+
+
+.container .spritenavmain #koruhome-nav #koruhome-nav-01 ul.child li#why01 {
+    display: inline;
+}
+.container .spritenavmain #koruhome-nav #koruhome-nav-01 ul.child li#why01 a {
+	background: #fff;
+	border: none;
+	color: #000000;
+	line-height: 30px;
+	padding: 0 8px 0 10px;
+	font-size: small;
+}
+.container .spritenavmain #koruhome-nav li#koruhome-nav-01 ul li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	opacity: 1;
+	text-decoration: underline;
+	font-size: medium;
+	font-weight: lighter;
+}
+
+
+/* A class of current will be added via jQuery */
+.container .spritenavmain #koruhome-nav li#koruhome-nav-01.current > a {
+    background: #f7f7f7;
+    float:left;
+}
+/* CSS fallback */
+.container .spritenavmain #koruhome-nav li#koruhome-nav-01:hover > ul.child {
+	left: 0px;
+	top: 100px;
+	display: inline;
+	position: absolute;
+	text-align: left;
+	width: 980px;
+	color:#000000;
+	border-bottom: 1px solid #000000;
+	background-color: #3b75ba;
+}
+
+.container .spritenavmain #koruhome-nav #koruhome-nav-01 .child #why01 a {
+	color: #000000;
+}

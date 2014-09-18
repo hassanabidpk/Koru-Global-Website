@@ -1,0 +1,688 @@
+@charset "UTF-8";
+.sidebar1 {
+	float: left;
+	width: 200px;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 195px;
+	border: 2px solid #0C36B7;
+	background-color: #FFFFFF;
+	border-top-left-radius: 4px 4px;
+}
+.sidebar1  nav ul {
+	list-style: none; /* this creates the space between the navigation on the content below */
+	font-size: 90%;
+	border-spacing: 0px 0px;
+	background-color: #FFFFFF;
+}
+.sidebar1  nav ul li {
+	color:#000000
+}
+.sidebar1 nav ul li a {
+	color: #000000;
+	text-decoration: underline;
+}
+.sidebar1  nav ul a:link{ /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 10px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #0;
+	text-align: left;
+	color: #0;
+}
+.sidebar1 nav ul a:hover, nav ul a:active, nav ul a:focus, nav ul a:visited{ /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #FFFFF;
+	color: #0;
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+.sidebar_product {
+	float: left;
+	width: 180px;
+	margin-top: 15px;
+	padding-bottom: 10px;
+	background-color: #FFFFFF;
+	height: 834px;
+}
+.sidebar_product  nav ul {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #F6B06A; /* this creates the space between the navigation on the content below */
+	font-size: 90%;
+	margin-left: 0px;
+	border-right-color: #F6B06A;
+	border-bottom-color: #F6B06A;
+	border-left-color: #F6B06A;
+	border-spacing: 0px 0px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	background-color: #F1D7BD;
+}
+.sidebar_product  nav ul li {
+	color:#000000
+}
+
+.wrapper .sidebar_product nav ul li a {
+	color: #000000;
+	text-decoration: underline;
+}
+.sidebar_product  nav ul a:link{ /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background: #0;
+	text-align: left;
+	color: #0;
+}
+.sidebar_product nav ul a:hover, nav ul a:active, nav ul a:focus, nav ul a:visited{ /* this changes the background and text color for both mouse and keyboard navigators */
+	background: #FFFFF;
+	color: #0;
+	font-weight: bold;
+}
+
+.content {
+	padding: 10px 20px;
+	width: 730px;
+	float: left;
+	margin-left: 205px;
+	background-color: #FFFFFF;
+	margin-top: 140px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+	background-color:#FFFFFF
+}
+
+
+.content .subcontent h2{
+	color: #000000;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	margin-left: 100px;
+	text-align: left;
+}
+.content h1 {
+	font: 700 20px "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: left;
+	text-transform: uppercase;
+	width: auto;
+	color: #000000;
+	text-decoration: underline;
+	text-indent: 50px;
+	margin-top: 20px;
+}
+.container #topbannerimage {
+	width: 980px;
+	height: 100px;
+	position: absolute;
+	top: 160px;
+}
+.container #topbannerimage img {
+	float: right;
+}
+
+.container .sidebar1 aside .floatleft img {
+	width: 100px;
+	margin-left: -40px;
+	margin-top: -20px;
+}
+
+.container .sidebar1 aside p  {
+	font-size: small;
+	display: block;
+	width: 90px;
+	padding-right: 4px;
+	margin-top: -8px;
+	padding-left: px;
+	position: absolute;
+	float: right;
+	height: 100px;
+	margin-left: 105px;
+}
+
+/* new css for navigation bar  */
+.container #mainnav01 #mainnav2 ul {
+	list-style-type: none;
+	margin: px;
+	padding: 0px;
+}
+.container #mainnav01 #mainnav2 a {
+	display: block;
+	float: left;
+	background-color: #217AD4;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-weight: 500;
+	text-decoration: none;
+}
+.container #mainnav01 #mainnav2 a:hover, .container #mainnav01 #mainnav2 a:active,.container #mainnav01 #mainnav2 a:focus, .container #mainnav01 #mainnav2 a.thispage {
+	text-decoration: none;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+
+.container #mainnav01 #mainnav2 nav ul li a {
+
+		display: block;
+	width: 15%;
+	float: left;
+}
+
+
+/* nnnnnn*/
+
+
+.container #mainnav01 #mainnav2 {
+	width: 980px;
+	position: relative;
+}
+
+
+/* Targeting both first and second level menus */
+
+.container #mainnav01 #mainnav2 {position: relative;
+z-index: 100;}
+
+
+/* Targeting the second level menu */
+.container #mainnav01 #mainnav2 li ul {
+	color: #333;
+	display: none; 
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 980px;
+}
+.container #mainnav01 #mainnav2 li ul li {
+    display: inline;
+}
+.container #mainnav01 #mainnav2 li ul li a {
+	background: #fff;
+	border: none;
+	color: #000000;
+	line-height: 30px;
+	padding: 0 8px 0 10px;
+	font-size: small;
+}
+.container #mainnav01 #mainnav2 li ul li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	opacity: 1;
+	text-decoration: underline;
+	font-size: medium;
+	font-weight: lighter;
+}
+
+/* Third level menu */
+.container #mainnav01 #mainnav2 li ul li ul{
+    top: 0;
+}
+ul.child {
+background-color:#217AD4;  
+}
+/* A class of current will be added via jQuery */
+.container #mainnav01 #mainnav2 li.current > a {
+    background: #f7f7f7;
+    float:left;
+}
+/* CSS fallback */
+.container #mainnav01 #mainnav2 li:hover > ul.child {
+	left: 35px;
+	top: 50px;
+	display: inline;
+	position: absolute;
+	text-align: left;
+	width: 920px;
+	border-bottom: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+.container #mainnav01 #mainnav2 li:hover > ul.grandchild  {
+    display:block;
+}
+
+.container #mainnav01 #mainnav a.whyhover:hover, .container #mainnav01 #mainnav a.whyhover:active,.container #mainnav01 #mainnav a.whyhover:focus, .container #mainnav01 #mainnav a.whyhover.thispage {
+	text-decoration: none;
+	background-color:#2DBE06;
+	color: #FFFFFF;
+}
+
+.container #mainnav01 #mainnav a.kproducts:hover, .container #mainnav01 #mainnav a.kproducts:active,.container #mainnav01 #mainnav a.kproducts:focus, .container #mainnav01 #mainnav a.kproducts.thispage {
+	text-decoration: none;
+	background-color:#2DBE06;
+	color: #FFFFFF;
+}
+
+.container #mainnav01 #mainnav a.services:hover, .container #mainnav01 #mainnav a.services:active,.container #mainnav01 #mainnav a.services:focus, .container #mainnav01 #mainnav a.services.thispage {
+	text-decoration: none;
+	background-color:#9e0039;
+	color: #FFFFFF;
+}
+.container #mainnav01 #mainnav a.travel:hover, .container #mainnav01 #mainnav a.travel:active,.container #mainnav01 #mainnav a.travel:focus, .container #mainnav01 #mainnav a.travel.thispage {
+	text-decoration: none;
+	background-color:#a42cdc;
+	color: #FFFFFF;
+}
+.container #mainnav01 #mainnav a.aboutkorea:hover, .container #mainnav01 #mainnav a.aboutkorea:active,.container #mainnav01 #mainnav a.aboutkorea:focus, .container #mainnav01 #mainnav a.aboutkorea.thispage {
+	text-decoration: none;
+	background-color:#13b5bb;
+	color: #FFFFFF;
+}
+
+.container #mainnav01 #mainnav a.newsevents:hover, .container #mainnav01 #mainnav a.newsevents:active,.container #mainnav01 #mainnav a.newsevents:focus, .container #mainnav01 #mainnav a.newsevents.thispage {
+	text-decoration: none;
+	background-color:#2DBE06;
+	color: #FFFFFF;
+}
+.container .content section #pusanmap {
+	float: right;
+}
+
+.content .subcontent #translationimage {
+	float: right;
+	margin-right: 20px;
+	margin-left: 20px;
+	}
+.content .subcontent .slideshowservices1 {
+	width: 300px;
+	height: 180px;
+	margin-left: 20px;
+}
+.content .subcontent .slideshowservices2 {
+	width: 300px;
+	height: 180px;
+	margin-left: 350px;
+	margin-top: -180px;
+}
+
+.container #intlshipmenttop section .slideshowservices3 {
+	width: 300px;
+	height: 180px;
+}
+.container #intlshipmenttop section .slideshowservices4 {
+	width: 300px;
+	height: 180px;
+	margin-left: 310px;
+	margin-top: -180px;
+}
+
+
+.container #koreatraveltop section .tourbanner {
+	width: 620px;
+	height: 150px;
+	margin-left: -10px;
+}
+.container #koreatraveltop section .tourbanner dl.travel_list {
+	width: 300px;
+	height: 160px;
+	float: left;
+}
+.container #koreatraveltop section .tourbanner .travel_list p {
+	width: 130px;
+	float: right;
+	padding-right: 8px;
+	margin-right: 15px;
+	margin-top: 0px;
+	font-size: small;
+	margin-left: -1px;
+}
+.container #koreatraveltop section .tourbanner .travel_list figure img {
+	float: left;
+	margin-left: -40px;
+}
+.container #koreatraveltop section #studyphoto1 {
+	float: right;
+	margin-left: 15px;
+}
+#koreatraveltop section a #ktoimage {
+	float: none;
+	margin-left: 250px;
+	margin-bottom: 10px;
+}
+
+#koreatraveltop section a #ktoimage2 {
+	float: none;
+	margin-left: 240px;
+	margin-bottom: 10px;
+}
+.container #intlshipmenttop section .slideshowservices1 #main_banner_sub_1 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices1 #main_banner_sub_2 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices2 #main_banner_sub_3 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices2 #main_banner_sub_4 {
+	background-color: #FFFFFF;
+}
+
+.container #intlshipmenttop section .slideshowservices3 #main_banner_sub_5 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices3 #main_banner_sub_6 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices4 #main_banner_sub_7 {
+	background-color: #FFFFFF;
+}
+.container #intlshipmenttop section .slideshowservices4 #main_banner_sub_8 {
+	background-color: #FFFFFF;
+}
+.container .sidebar1 nav ul img {
+}
+section.subcontent {
+	width: 680px;
+	border: 1px solid #000000;
+	z-index: 1000;
+	display: block;
+	margin-left: 30px;
+	margin-top: 90px;
+	margin-bottom: 80px;
+	padding-bottom: 40px;
+}
+.content .subcontent p img {
+	float: right;
+	display: block;
+	border: 1px solid #000000;
+	margin-top: -160px;
+	margin-left: px;
+	margin-right: 20px;
+}
+.content .subcontent p {
+	margin-left: 20px;
+	display: block;
+	margin-right: 20px;
+	margin-top: 0px;
+}
+a {
+	text-decoration: none;
+}
+.content .subcontent img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#bottombannerimage1 img {
+	margin-top: 20px;
+	display: block;
+	margin-left: 20px;
+}
+.content .subcontent b {
+}
+
+
+.content .subcontent .tourbanner {
+	height: 140px;
+}
+.content .subcontent .tourbanner dl.travel_list {
+	width: 340px;
+	height: 140px;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content .subcontent .tourbanner .travel_list p {
+	width: 150px;
+	float: right;
+	padding-right: 8px;
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: small;
+	padding-left: 2px;
+	margin-left: 5px;
+}
+.content .subcontent .tourbanner .travel_list figure img {
+	margin-left: -20px;
+	float: left;
+	display: block;
+}
+
+.content .subcontent a #ktoimage2 {
+	float: none;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content .subcontent #studyphoto1 {
+	float: right;
+	margin-left: 15px;
+	display: block;
+	margin-right: 20px;
+}
+
+.content .subcontent #studyphoto2 {
+	float: right;
+	margin-left: 15px;
+	display: block;
+	margin-right: 20px;
+}
+.content .subcontent #contentworldmap {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+.content .subcontent #emailform  {
+	background-color: #C0BFBF;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: block;
+	border: 2px solid #38AFCE;
+}
+
+.content .subcontent #emailform p.formp {
+	padding-top: 20px;
+	margin-left: 50px;
+}
+
+.content .subcontent #emailform p.formp #from {
+	margin-left: 40px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.content .subcontent #emailform p.formp #contact {
+	margin-left: 22px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+
+.content .subcontent #emailform p.formp #subject {
+	margin-left: 30px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.content .subcontent #emailform p.formp #message {
+	margin-left: 86px;
+	border-radius: 5px;
+	padding-left: 5px;
+	margin-top: -40px;
+}
+.content .subcontent #emailform .formp #send {
+	margin-left: 220px;
+	margin-right: auto;
+	background-color: #38AFCE;
+	color: #FFFFFF;
+	font: large "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 30px;
+}
+
+.content .subcontent #emailform p.formp #fromr {
+	margin-left: 55px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.content .subcontent #emailform p.formp #contactr {
+	margin-left: 22px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+
+.content .subcontent #emailform p.formp #subjectr {
+	margin-left: 42px;
+	border-radius: 5px;
+	padding-left: 5px;
+}
+
+.content .subcontent #emailform p.formp #messager {
+	margin-left: 86px;
+	border-radius: 5px;
+	padding-left: 5px;
+	margin-top: -30px;
+}
+.content .subcontent #emailform .formp #sendr {
+	margin-left: 220px;
+	margin-right: auto;
+	background-color: #38AFCE;
+	color: #FFFFFF;
+	font: large "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	border: 1px solid #FFFFFF;
+	margin-bottom: 20px;
+	width: 100px;
+	height: 30px;
+}
+
+.sidebar2 {
+	float: left;
+	width: 200px;
+	padding-bottom: 20px;
+	position: absolute;
+	top: 260px;
+	border: 2px solid #0C36B7;
+	background-color: #FFFFFF;
+	border-top-left-radius: 4px 4px;
+}
+.sidebar1 nav ul li ul.product_sublist {
+	width: 188px;
+}
+
+.sidebar1 nav ul li .product_sublist a:link {
+	
+	background:#F6CCA2;}
+	
+	
+.main_bottom_box_prod {
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	height: 850px;
+	position: relative;
+	background:#F6CCA2;
+	margin-top: 20px;
+}
+
+
+.main_bottom_box_prod .main_bottom_list {
+	float: left;
+	width: 180px;
+	height: 230px;
+	margin-left: 20px;
+}
+
+.main_bottom_box_prod .main_bottom_list dd {
+	margin: 10px auto;
+	text-align: left;
+	text-indent: px;
+	border-color: #2541CB;
+	border-style: none;
+	padding-top: 5px;
+	background-color: #FFFFFF;
+	height: 140px;
+	width: 170px;
+}
+.main_bottom_box_prod .main_bottom_list .bttn {
+	background-color: #3b75ba;
+	width: 220px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 3px;
+	padding-bottom: 3px;main_image_anim
+	padding-top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	border-radius: 4px;
+	border: 3px solid #3b75ba;
+}
+.main_bottom_box_prod .main_bottom_list dd ul {
+list-style:inside;
+margin-left:10px;
+	}
+.main_bottom_box_prod .main_bottom_list dd ul li a {
+	text-decoration: none;
+	font-size: 90%;
+}
+.main_bottom_box_prod .main_bottom_list dd ul li a:hover {
+	text-decoration: underline;
+	font-size: 80%;
+}
+
+.content .subcontent .prodbanner {
+	height: 140px;
+}
+.content .subcontent .prodbanner dl.prod_list {
+	margin-right: auto;
+}
+.content .subcontent .prodbanner .prod_list p {
+	width: 340px;
+	float: left;
+	padding-right: 8px;
+	margin-right: 15px;
+	font-size: small;
+	padding-left: 2px;
+	margin-left: 5px;
+	display: block;
+	margin-top: -10px;
+}
+.content .subcontent .prodbanner .prod_list figure img {
+	margin-left: -20px;
+	float: left;
+	display: block;
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+.content .subcontent .prodbanner .prod_list a {
+	display: block;
+	width: 30px;
+	margin-left: 180px;
+	margin-top: -15px;
+}
+
+.content .subcontent .prodbanner .prod_list a:hover, .content .subcontent .prodbanner .prod_list a:focus {
+	display: block;
+	width: 30px;
+	margin-left: 180px;
+	margin-top: -15px;
+}
+.content .subcontent .prodbanner .prod_list .prdouctdetail {
+	width: 400px;
+	margin-left: 320px;
+}
+.main_bottom_box_prod .main_bottom_list dd p .productimage1 {
+	margin-top: 20px;
+	float: right;
+	padding-left: px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content .subcontent .prodbanner .prod_list .figureproduct {
+	width: 240px;
+}

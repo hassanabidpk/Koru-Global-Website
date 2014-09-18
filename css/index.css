@@ -1,0 +1,985 @@
+@charset "UTF-8";
+body {
+	font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+	background-color:#d8d8d8;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+	padding: 0;
+	text-decoration: none;
+}
+h1, h3, h4, h5, h6 {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing block. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the blocks, instead of the block elements themselves, gets rid of any box model math. A nested block with side padding can also be used as an alternate method. */
+}
+h2 {
+	font: 600 normal 16px "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	position: static;
+	}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+	float: none;
+}
+/* ~~ This fixed width container surrounds all other blocks ~~ */
+.container {
+	width: 980px;
+	background-color: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+/* ~~ The header is not given a width. It will extend the full width of your layout. ~~ */
+header {
+	background-color: #FFFFFF;
+}
+
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+nav ul{
+	list-style: none; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	float: right;
+	background-color: #FFFFFF;
+}
+nav li {
+	display: block;
+	float: left;
+	background-color: #FFFFFF;
+}
+nav a, nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 5px;
+	display: block;
+	background-color: #FFFFFF;
+}
+nav a:hover, nav a:active, nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #FFFFFF;
+	color: #00000;
+}
+
+/* ~~ The footer ~~ */
+footer {
+	padding: 10px 0;
+	background-color: #969393;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*HTML 5 support - Sets new HTML 5 tags to display:block so browsers know how to render the tags properly. */
+header, section, aside, article {
+	display: inline;
+	float: none;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.floatright {
+	margin-right: 10px;
+	float: right;
+	padding-top: 10px;
+	margin-left: 30px;
+}
+
+.container #headerkoru {
+	width: 980px;
+	height: 110px;
+	background-color:#FFFFFF;
+}
+
+.container #top_left_main {
+	float: none;
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+}
+#toprighmain {
+	position: absolute;
+	left: 665px;
+	top: 34px;
+	width: 528px;
+	}
+#toprighmain ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#toprighmain a {
+	width: 10%;
+	float: left;
+	text-align: center;
+	background-color: #5995DF;
+	color: #FFFFFF;
+	padding: 6px;
+}
+
+#toprighmain {
+	display: block;
+}
+
+.container #top_center_text {
+	float: none;
+	width: 189px;
+	height: 80px;
+	position: static;
+	margin-left: 220px;
+	margin-top: -100px;
+}
+
+.container #mainnav01 {
+	margin-top: 100px;
+	padding-bottom: 10px;
+	float: none;
+	margin-left: -35px;
+}
+#main_image_anim {
+	background-color: #87C3F4;
+	width: 980px;
+	height: 290px;
+	margin-top: 60px;
+}
+#main_image_anim article {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #FFFFFF;
+	border-radius: 15px;
+	float: none;
+	margin-top: 150px;
+	width: 36%;
+}
+#main_image_anim h2 {
+	color: #000000;
+	text-transform: uppercase;
+	font: italic bold normal 18px "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	float: none;
+	display: block;
+	width: 440px;
+	max-width: 440px;
+	height: 42px;
+}
+
+
+
+#main_image_anim img {
+	float: right;
+}
+.container #main_image_anim article #korulogo2 {
+	top: 20px;
+	left: 90px;
+}
+.container #main_image_anim article #worldmap1 {
+	position: absolute;
+	top: 120px;
+	background-color: #87C3F4;
+}
+.container #main_image_anim article #worldmaprus {
+		position: absolute;
+	top: 150px;
+	background-color: #87C3F4;
+	}
+	
+	
+.container #main_image_anim article #callnconsult1 {
+	position: absolute;
+	top: 120px;
+	left: 160px;
+}
+.container #main_image_anim article #callnconsultrus {
+	position: absolute;
+	top: 145px;
+	left: 200px;
+}
+.container #main_image_anim article #emailinquiry1 {
+	position: absolute;
+	top: 200px;
+	left: 225px;
+}
+
+.container #main_image_anim article #emailinquiryrus {
+	position: absolute;
+	top: 220px;
+	left: 240px;
+	width: 120px;
+	height: 28px;
+}
+
+
+.container #main_image_anim #korulogo2 {
+	float: left;
+	margin-left: 120px;
+}
+.container #main_image_anim  #worldmap1 {
+	float: left;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.container #main_image_anim #callnconsult1 {
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.container #main_image_anim #worldmaprus {
+		position: absolute;
+	top: 150px;
+	background-color: #87C3F4;
+	}
+	
+	
+
+.container #main_image_anim #callnconsultrus {
+	position: absolute;
+	top: 145px;
+	left: 200px;
+}
+.container #main_image_anim #emailinquiry1 {
+	position: absolute;
+	top: 200px;
+	left: 225px;
+}
+
+.container #main_image_anim #emailinquiryrus {
+	position: absolute;
+	top: 220px;
+	left: 240px;
+	width: 120px;
+	height: 28px;
+}
+
+
+
+#maincenternav02 {
+	width: 980px;
+	background-color: #0C36B7;
+	margin-top: 100px;
+	height: auto;
+}
+
+.main_center01 #maincenternav02 nav{
+	display: block;
+	background-color: #FFFFFF;
+	margin-top: 0px;
+}
+#maincenternav02 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#maincenternav02 a {
+	display: block;
+	background-color: #4D4D4D;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	float: left;
+	width: 23%;
+}
+
+.container #main_center01 #maincenternav02 ul li a img {
+	float: left;
+}
+
+.main_center_2 {
+	width: 952px;
+	min-width: 740px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	top: 669px;
+	left: 25px;
+	right: 200px;
+}
+
+.main_center_2 nav a {
+	width: 12.5%;
+	display: block;
+	float: left;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 6px;
+	border: 1px solid #000000;
+	margin-bottom:20px;
+}
+.main_center01 nav ul {
+	list-style: none;
+	padding: 0px;
+	}
+	
+.main_center01 nav ul li {
+	float: left;
+		}
+.main_center01 li img {
+	margin-top: 40px;
+	float:left;
+}
+.main_center01 #maincenternav02 ul li a p {
+	font-size: small;
+}
+
+#main_image_anim .slideshow {
+	background-color: #FFFFFF;
+	width: 540px;
+	height: 285px;
+	display: block;
+	float: right;
+	margin-top: -264px;
+}
+.container nav ul li a img {
+	float: none;
+}
+
+#mainnav2 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#mainnav2 a {
+	width: 90%;
+	display: block;
+	float: left;
+	background-color: #217AD4;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-decoration: none;
+	border-radius: 0px / 4px;
+}
+
+ 
+.container #mainnav02 {
+	width: 980px;
+	position: absolute;
+	top: 619px;
+	right: 0px;
+	left: 18px;
+}
+.container #mainnav02 #mainnav22 ul li a {
+	width: 80%;
+	display: block;
+	float: none;
+	height: 150px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	border: medium solid #000000;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: left;
+	clear: none;
+}
+
+.container #mainnav02 #mainnav22 ul li a img {
+	padding-right: 4px;
+}
+.container #mainnav02 #mainnav22 ul li a p {
+	font-weight: 200;
+	font-size: small;
+	text-align: left;
+	text-indent: 0px;
+}
+
+#main {
+	width: 20%;
+	margin-left: 2%;
+	float: left;
+	margin-top: 40px;
+}
+.container #main1 {
+	position: absolute;
+	top: 560px;
+	display: block;
+	width: 245px;
+	border: 1px solid #000000;
+	padding-bottom: 10px;
+	float: left;
+}
+.container #main2 {
+	position: absolute;
+	top: 560px;
+	display: block;
+	width: 245px;
+	border: 1px solid #000000;
+	padding-bottom: 10px;
+	float: left;
+	left:38%;
+}
+.container #main3 {
+	position: absolute;
+	top: 560px;
+	display: block;
+	width: 245px;
+	border: 1px solid #000000;
+	padding-bottom: 10px;
+	float: left;
+	left:50%;
+}
+.container #main4 {
+	position: absolute;
+	top: 560px;
+	display: block;
+	width: 241px;
+	border: 1px solid #000000;
+	padding-bottom: 10px;
+	left:59%;
+}
+.container div #main1 p, div #main2 p, div #main3 p, div #main4 p, div #main5 p, div #main6 p {
+	font-weight: 100;
+	font-size: small;
+	width: 80%;
+	padding-left: 40px;
+}
+.container div #main1 .centered img, div #main2 .centered img, div #main3 .centered img, div #main4 .centered img{
+	float: left;
+	display: block;
+	margin-left: auto;
+	padding-left: 40px;
+}
+#main5 {
+	top: 664px;
+	display: block;
+	width: 490px;
+	border: 4px solid #000000;
+	height: 190px;
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+}
+
+.main5 {
+	display: block;
+	width: 430px;
+	border: 4px solid #000000;
+	height: 190px;
+	float: left;
+	margin-top: 10px;
+	position: relative;
+	background-color: #C3DEF4;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main6 {
+	display: block;
+	width: 520px;
+	border: 4px solid #000000;
+	height: 190px;
+	float: right;
+	margin-top: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+}
+
+.container #main6 {
+	position: absolute;
+	top: 664px;
+	display: block;
+	width: 486px;
+	left: 50%;
+	height: 190px;
+	border-top: 4px solid #000000;
+	border-bottom: 4px solid #000000;
+	border-right: 4px solid #000000;
+	border-left: 0px solid #000000;
+}
+
+.container div #main5 .centered img, div #main6 .centered img {
+	margin-right: 20px;
+	display: inline;
+	float: left;
+	height: 120px;
+	margin-left: 8px;
+	padding-bottom: 10px;
+	margin-top: -5px;
+}
+
+.container div #main5 h2 {
+	display: block;	
+	
+	}
+.main5 h2 {
+	display: block;
+	text-align: left;
+	padding-left: 10px;
+	}
+.main5 ul li {
+	margin-right: 5px;
+	float: right;
+	width: 300px;
+	list-style: circle outside;
+	position: static;
+}
+.main5 ul li a {
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+
+.main5 ul li a:hover {
+	text-decoration: underline;
+}
+.container div #main5 ul li a:hover {
+	text-decoration: underline;
+}
+	
+	.centered {
+	margin-left: -20px;
+	margin-right: 10px;
+	float: left;
+}
+
+.mainsection02 {
+	width: 1944px;
+	position: relative;
+	height: 120px;
+	background-color: #FFFFFF;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #000000;
+}
+
+.container .main_bottom_box {
+	width: 100%;
+	min-width: 740px;
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	height: 450px;
+	top: 870px;
+	background-color: #BBDBF4;
+}
+
+
+.container .main_bottom_box .main_bottom_list {
+	float: left;
+	margin-left: 20px;
+	width: 220px;
+	height: 180px;
+}
+
+.container .main_bottom_box .main_bottom_list dd {
+	margin-top: 40px;
+	text-align: left;
+	text-indent: px;
+	border-color: #2541CB;
+	border-style: none;
+	padding-top: 5px;
+	margin-right: -4px;
+	margin-left: -1px;
+	background-color: #F6F4F4;
+	height: 150px;
+}
+
+.container .main_bottom_box .main_bottom_list .bttn {
+	background-color: #5995DF;
+	width: 220px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	border-radius: 4px;
+	border: 3px solid #5995DF;
+}
+.container .main_bottom_box .main_bottom_list dd ul {
+list-style:inside;
+margin-left:10px;
+	}
+.container .main_bottom_box .main_bottom_list dd ul li a {
+	text-decoration: none;
+	font-size: 80%;
+}
+.container .main_bottom_box .main_bottom_list dd ul li a:hover {
+	text-decoration: underline;
+	font-size: 80%;
+}
+.container footer address {
+	font-size: small;
+}
+.container #mainsection02 .main_bottom_list {
+	float: left;
+	width: 243px;
+	border: 1px solid #000000;
+	height: 160px;
+}
+.container #mainsection02 .main_bottom_list .centered img {
+	margin-left: 10px;
+	margin-right: auto;
+	margin-top: 4px;
+}
+.container #mainsection02 .main_bottom_list p {
+	font-size: small;
+	float: right;
+	display: inline;
+	width: 125px;
+	padding-right: 8px;
+	height: 130px;
+	margin-top: -90px;
+}
+.container #mainsection02 .main_bottom_list h2 {
+	font-weight: bold;
+}
+.container #mainsection02 .main_bottom_list a {
+	text-decoration: none;
+	font-weight: lighter;
+}
+.container #mainsection02 .main_bottom_list a h2 {
+	font-weight: 600;
+	border-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+/* new css for navigation bar  */
+.container #mainnav01 #mainnav ul {
+	list-style-type: none;
+	margin: px;
+	padding: 0px;
+}
+.container #mainnav01 #mainnav a {
+	display: block;
+	float: left;
+	background-color: #217AD4;
+	text-align: center;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	font-weight: 500;
+	text-decoration: none;
+}
+.container #mainnav01 #mainnav a:hover, .container #mainnav01 #mainnav a:active,.container #mainnav01 #mainnav a:focus, .container #mainnav01 #mainnav a.thispage {
+	text-decoration: none;
+	background-color:#FFFFFF;
+	color: #000000;
+}
+
+
+.container #mainnav01 #mainnav nav ul li a {
+
+		display: block;
+	width: 15%;
+	float: left;
+}
+
+.container #toprightnav ul li a {
+		display: block;
+	width: 20%;
+	float: left;
+}
+.container #mainnav01 #mainnav {
+	width: 980px;
+	position: relative;
+}
+
+
+/* Targeting both first and second level menus */
+
+.container #mainnav01 #mainnav {position: relative;
+z-index: 100;}
+
+
+/* Targeting the second level menu */
+.container #mainnav01 #mainnav li ul {
+	color: #333;
+	display: none; 
+	position: absolute;
+	background-color: #FFFFFF;
+	width: 980px;
+}
+.container #mainnav01 #mainnav li ul li {
+    display: inline;
+}
+.container #mainnav01 #mainnav li ul li a {
+	background: #fff;
+	border: none;
+	color: #000000;
+	line-height: 30px;
+	padding: 0 8px 0 10px;
+	font-size: small;
+}
+.container #mainnav01 #mainnav li ul li a:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	opacity: 1;
+	text-decoration: underline;
+	font-size: medium;
+	font-weight: lighter;
+}
+
+/* Third level menu */
+.container #mainnav01 #mainnav li ul li ul{
+    top: 0;
+}
+ul.child {
+background-color:#217AD4;  
+}
+/* A class of current will be added via jQuery */
+.container #mainnav01 #mainnav li.current > a {
+    background: #f7f7f7;
+    float:left;
+}
+/* CSS fallback */
+.container #mainnav01 #mainnav li:hover > ul.child {
+	left: 35px;
+	top: 50px;
+	display: inline;
+	position: absolute;
+	text-align: left;
+	width: 920px;
+	border-bottom: 1px solid #000000;
+	background-color: #FFFFFF;
+}
+.container #mainnav01 #mainnav li:hover > ul.grandchild  {
+    display:block;
+}
+#toprightnav {
+	display: block;
+	background-color: #FFFFFF;
+	width: 440px;
+	float: right;
+	margin-top: -92px;
+	height: 60px;
+}
+#top_left_main a #Insert_logo {
+	display: block;
+	margin-top: 10px;
+}
+
+.floatleft {
+	float:left;
+	
+	}
+.container #mainsection02 .main_bottom_list figure img {
+	float: left;
+	margin-left: -40px;
+	width: 100px;
+	height: 65px;
+}
+.container div #main5 ul li {
+	margin-right: 5px;
+}
+.container div #main5 ul li a {
+	font-size: small;
+	text-decoration: none;
+	color: #000000;
+}
+.container div #main5 ul li a:hover {
+	text-decoration: underline;
+	padding-left: 0px;
+}
+.container #koreatraveltop section #studyphoto2 {
+	float: right;
+}
+#main_image_anim .slideshow #main_banner_1 {
+	background-color: #FFFFFF;
+}
+
+#main_image_anim .slideshow #main_banner_2 {
+	background-color: #FFFFFF;
+}
+
+#main_image_anim .slideshow #main_banner_3 {
+	background-color: #FFFFFF;
+	z-index: -1;
+}
+
+#main_image_anim .slideshow #main_banner_4 {
+	background-color: #FFFFFF;
+}
+
+.container .spritenavmain {
+	width: 980px;
+	height: 40px;
+	position: absolute;
+}
+.container #main_image_anim article #call_email_div {
+	width: 420px;
+	height: 120px;
+	margin-top: 100px;
+	margin-left: -10px;
+	background-color: #d8d8d8;
+	border: 1px solid #000000;
+}
+.container #main_image_anim #call_email_div {
+	width: 420px;
+	height: 120px;
+	background-color: #d8d8d8;
+	border: 1px solid #000000;
+	margin-top: 100px;
+	margin-left: 8px;
+}
+
+.mainsection02 #scrollmainsection02 {
+	
+	list-style:none;
+}
+
+#scrollmainsection02 .mainsection02li {
+	float: left;
+	width: 243px;
+	border-top: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+	border-right: 0px solid #000000;
+	border-left: 3px solid #000000;
+	height: 114px;
+}
+.mainsection02 #scrollmainsection02 .mainsection02li a {
+	text-decoration:none;
+	}
+.mainsection02 #scrollmainsection02 .mainsection02li a h2 {
+	font-weight: 600;
+	text-decoration: none;
+	border-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: px;
+	padding-bottom: 3px;
+}
+.mainsection02 #scrollmainsection02 .mainsection02li a:hover {
+	text-decoration:underline;
+	}
+
+.mainsection02 #scrollmainsection02 figure img {
+	float: left;
+	margin-left: -40px;
+	width: 100px;
+	height: 65px;
+	margin-top: -28px;
+}
+.mainsection02 #scrollmainsection02 .mainsection02li p {
+	font-size: small;
+	float: right;
+	display: inline;
+	width: 125px;
+	padding-right: 8px;
+	height: 80px;
+	margin-top: -70px;
+	text-align: center;
+}
+
+.main5 figure img {
+	float: left;
+	margin-left: -35px;
+	width: 100px;
+}
+.mainsection03 {
+	width: 980px;
+	height: 200px;
+		margin-left: auto;
+	margin-right: auto;
+	position:relative;
+}
+.mainsection03 #tabs #tabs-1 p, .mainsection03 #tabs #tabs-2 p {
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.mainsection03 #tabs #tabs-1 a , .mainsection03 #tabs #tabs-2 a {
+	font-size: 12px;
+	text-decoration: none;
+}
+.mainsection03 #tabs #tabs-1 a:hover, .mainsection03 #tabs #tabs-2 a:hover{
+	text-decoration: underline;
+}
+
+
+.main_bottom_box {
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	height: 450px;
+	position: relative;
+	background-color: #BBDBF4;
+	margin-top: 20px;
+}
+
+
+.main_bottom_box .main_bottom_list {
+	float: left;
+	margin-left: 20px;
+	width: 220px;
+	height: 180px;
+}
+
+.main_bottom_box .main_bottom_list dd {
+	margin-top: 40px;
+	text-align: left;
+	text-indent: px;
+	border-color: #2541CB;
+	border-style: none;
+	padding-top: 5px;
+	margin-right: -4px;
+	margin-left: -1px;
+	background-color: #FFFFFF;
+	height: 150px;
+}
+.main_bottom_box .main_bottom_list .bttn {
+	background-color: #3b75ba;
+	width: 220px;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 3px;
+	padding-bottom: 3px;main_image_anim
+	padding-top: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+	border-radius: 4px;
+	border: 3px solid #3b75ba;
+}
+.main_bottom_box .main_bottom_list dd ul {
+list-style:inside;
+margin-left:10px;
+	}
+.main_bottom_box .main_bottom_list dd ul li a {
+	text-decoration: none;
+	font-size: 90%;
+}
+.main_bottom_box .main_bottom_list dd ul li a:hover {
+	text-decoration: underline;
+	font-size: 80%;
+}
+#sitemap .main_bottom_list .sitmapimg {
+	background-color: #87C3F4;
+}
+#bottombannerimage2 img {
+	height: 90px;
+	margin-top: -95px;
+	display: block;
+	margin-left: 60px;
+	padding-bottom: px;
+}
+#headerkoru #toprightnav u#snstop {
+	margin-top: 10px;
+}
+#headerkoru #toprightnav ul li {
+}
+#sitemap .main_bottom_list dt img {
+	margin-bottom: -30px;
+}
